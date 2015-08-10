@@ -80,6 +80,7 @@ namespace WhatsAppApi
 
         protected FMessage getFmessageImage(string to, byte[] ImageData, ImageType imgtype)
         {
+            to = GetJID(to);        	
             string type = string.Empty;
             string extension = string.Empty;
             switch (imgtype)
